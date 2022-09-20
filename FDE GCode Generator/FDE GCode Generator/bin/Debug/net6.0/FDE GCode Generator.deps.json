@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "FDE GCode Generator/1.0.0": {
+        "dependencies": {
+          "FDE": "1.0.0"
+        },
+        "runtime": {
+          "FDE GCode Generator.dll": {}
+        }
+      },
+      "FDE/1.0.0": {
+        "runtime": {
+          "FDE.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "FDE GCode Generator/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FDE/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

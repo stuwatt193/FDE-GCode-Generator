@@ -1,0 +1,12 @@
+F:\OneDrive\FDE\FDE GCode Generator\FDE\bin\Debug\net6.0\FDE.deps.json
+F:\OneDrive\FDE\FDE GCode Generator\FDE\bin\Debug\net6.0\FDE.dll
+F:\OneDrive\FDE\FDE GCode Generator\FDE\bin\Debug\net6.0\ref\FDE.dll
+F:\OneDrive\FDE\FDE GCode Generator\FDE\bin\Debug\net6.0\FDE.pdb
+F:\OneDrive\FDE\FDE GCode Generator\FDE\obj\Debug\net6.0\FDE.csproj.AssemblyReference.cache
+F:\OneDrive\FDE\FDE GCode Generator\FDE\obj\Debug\net6.0\FDE.GeneratedMSBuildEditorConfig.editorconfig
+F:\OneDrive\FDE\FDE GCode Generator\FDE\obj\Debug\net6.0\FDE.AssemblyInfoInputs.cache
+F:\OneDrive\FDE\FDE GCode Generator\FDE\obj\Debug\net6.0\FDE.AssemblyInfo.cs
+F:\OneDrive\FDE\FDE GCode Generator\FDE\obj\Debug\net6.0\FDE.csproj.CoreCompileInputs.cache
+F:\OneDrive\FDE\FDE GCode Generator\FDE\obj\Debug\net6.0\FDE.dll
+F:\OneDrive\FDE\FDE GCode Generator\FDE\obj\Debug\net6.0\ref\FDE.dll
+F:\OneDrive\FDE\FDE GCode Generator\FDE\obj\Debug\net6.0\FDE.pdb

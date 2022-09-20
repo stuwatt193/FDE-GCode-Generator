@@ -1,0 +1,18 @@
+F:\OneDrive\FDE\FDE GCode Generator\FDE GCode Generator\bin\Debug\net6.0\FDE GCode Generator.exe
+F:\OneDrive\FDE\FDE GCode Generator\FDE GCode Generator\bin\Debug\net6.0\FDE GCode Generator.deps.json
+F:\OneDrive\FDE\FDE GCode Generator\FDE GCode Generator\bin\Debug\net6.0\FDE GCode Generator.runtimeconfig.json
+F:\OneDrive\FDE\FDE GCode Generator\FDE GCode Generator\bin\Debug\net6.0\FDE GCode Generator.dll
+F:\OneDrive\FDE\FDE GCode Generator\FDE GCode Generator\bin\Debug\net6.0\ref\FDE GCode Generator.dll
+F:\OneDrive\FDE\FDE GCode Generator\FDE GCode Generator\bin\Debug\net6.0\FDE GCode Generator.pdb
+F:\OneDrive\FDE\FDE GCode Generator\FDE GCode Generator\obj\Debug\net6.0\FDE GCode Generator.csproj.AssemblyReference.cache
+F:\OneDrive\FDE\FDE GCode Generator\FDE GCode Generator\obj\Debug\net6.0\FDE GCode Generator.GeneratedMSBuildEditorConfig.editorconfig
+F:\OneDrive\FDE\FDE GCode Generator\FDE GCode Generator\obj\Debug\net6.0\FDE GCode Generator.AssemblyInfoInputs.cache
+F:\OneDrive\FDE\FDE GCode Generator\FDE GCode Generator\obj\Debug\net6.0\FDE GCode Generator.AssemblyInfo.cs
+F:\OneDrive\FDE\FDE GCode Generator\FDE GCode Generator\obj\Debug\net6.0\FDE GCode Generator.csproj.CoreCompileInputs.cache
+F:\OneDrive\FDE\FDE GCode Generator\FDE GCode Generator\obj\Debug\net6.0\FDE GCode Generator.dll
+F:\OneDrive\FDE\FDE GCode Generator\FDE GCode Generator\obj\Debug\net6.0\ref\FDE GCode Generator.dll
+F:\OneDrive\FDE\FDE GCode Generator\FDE GCode Generator\obj\Debug\net6.0\FDE GCode Generator.pdb
+F:\OneDrive\FDE\FDE GCode Generator\FDE GCode Generator\obj\Debug\net6.0\FDE GCode Generator.genruntimeconfig.cache
+F:\OneDrive\FDE\FDE GCode Generator\FDE GCode Generator\bin\Debug\net6.0\FDE.dll
+F:\OneDrive\FDE\FDE GCode Generator\FDE GCode Generator\bin\Debug\net6.0\FDE.pdb
+F:\OneDrive\FDE\FDE GCode Generator\FDE GCode Generator\obj\Debug\net6.0\FDE GCode Generator.csproj.CopyComplete
