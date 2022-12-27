@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\OneDrive\\FDE\\FDE GCode Generator\\FDE GCode Generator\\FDE GCode Generator.csproj": {}
+    "D:\\FDE\\FDE GCode Generator\\FDE GCode Generator\\FDE GCode Generator.csproj": {}
   },
   "projects": {
-    "F:\\OneDrive\\FDE\\FDE GCode Generator\\FDE GCode Generator\\FDE GCode Generator.csproj": {
+    "D:\\FDE\\FDE GCode Generator\\FDE GCode Generator\\FDE GCode Generator.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\OneDrive\\FDE\\FDE GCode Generator\\FDE GCode Generator\\FDE GCode Generator.csproj",
+        "projectUniqueName": "D:\\FDE\\FDE GCode Generator\\FDE GCode Generator\\FDE GCode Generator.csproj",
         "projectName": "FDE GCode Generator",
-        "projectPath": "F:\\OneDrive\\FDE\\FDE GCode Generator\\FDE GCode Generator\\FDE GCode Generator.csproj",
+        "projectPath": "D:\\FDE\\FDE GCode Generator\\FDE GCode Generator\\FDE GCode Generator.csproj",
         "packagesPath": "C:\\Users\\Stu\\.nuget\\packages\\",
-        "outputPath": "F:\\OneDrive\\FDE\\FDE GCode Generator\\FDE GCode Generator\\obj\\",
+        "outputPath": "D:\\FDE\\FDE GCode Generator\\FDE GCode Generator\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -26,14 +26,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "F:\\OneDrive\\FDE\\FDE GCode Generator\\FDE\\FDE.csproj": {
-                "projectPath": "F:\\OneDrive\\FDE\\FDE GCode Generator\\FDE\\FDE.csproj"
+              "D:\\FDE\\FDE GCode Generator\\FDE\\FDE.csproj": {
+                "projectPath": "D:\\FDE\\FDE GCode Generator\\FDE\\FDE.csproj"
               }
             }
           }
@@ -53,7 +54,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -62,18 +64,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "F:\\OneDrive\\FDE\\FDE GCode Generator\\FDE\\FDE.csproj": {
+    "D:\\FDE\\FDE GCode Generator\\FDE\\FDE.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\OneDrive\\FDE\\FDE GCode Generator\\FDE\\FDE.csproj",
+        "projectUniqueName": "D:\\FDE\\FDE GCode Generator\\FDE\\FDE.csproj",
         "projectName": "FDE",
-        "projectPath": "F:\\OneDrive\\FDE\\FDE GCode Generator\\FDE\\FDE.csproj",
+        "projectPath": "D:\\FDE\\FDE GCode Generator\\FDE\\FDE.csproj",
         "packagesPath": "C:\\Users\\Stu\\.nuget\\packages\\",
-        "outputPath": "F:\\OneDrive\\FDE\\FDE GCode Generator\\FDE\\obj\\",
+        "outputPath": "D:\\FDE\\FDE GCode Generator\\FDE\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -88,6 +90,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -111,7 +114,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -120,7 +124,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

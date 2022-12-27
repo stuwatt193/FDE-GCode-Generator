@@ -10,6 +10,7 @@ namespace FDE.Primatives
     {
         Vec3 p1, p2;
         double r;
+        BoundingBox3D bb;
 
         public Cylinder(Vec3 point1, Vec3 point2, double radius)
         {
@@ -31,6 +32,13 @@ namespace FDE.Primatives
             double pln2 = Vec3.DotProduct(b.Normalise(), pos - p2);
 
             return Math.Max(cylInf, Math.Max(pln1, pln2));
+        }
+
+        void CalculateBoundingBox() //https://iquilezles.org/articles/diskbbox/
+        {
+            Vec3 span = p2 - p1;
+            Vec3 c = p1 + span / 2;
+            bb = new BoundingBox3D(c, 2 * r, 2 * r, span.Abs().z);
         }
     }
 }

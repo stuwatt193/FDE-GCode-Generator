@@ -7,9 +7,12 @@ using System.Threading.Tasks;
 namespace FDE
 {
     public abstract class Field
-    { 
+    {
+        public BoundingBox3D? boundingBox3D;
+
         public Field()
         {
+
         }
 
         /// <summary>
@@ -31,9 +34,18 @@ namespace FDE
             double dx = Value(pos + delX) - Value(pos - delX);
             Vec3 delY = new Vec3(0, d, 0);
             double dy = Value(pos + delY) - Value(pos - delY);
-            Vec3 delZ = new Vec3(0, d, 0);
+            Vec3 delZ = new Vec3(0, 0, d);
             double dz = Value(pos + delZ) - Value(pos - delZ);
             return new Vec3(dx, dy, dz).Normalise();
+        }
+
+        public int Sign(Vec3 Pos)
+        {
+            int sign = 0;
+            double value = Value(Pos);
+            if (value > 0) { sign = 1; };
+            if(value < 0) { sign = -1; };
+            return sign;
         }
     }    
 }

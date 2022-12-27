@@ -1,6 +1,6 @@
 ﻿namespace FDE
 {
-    public class Vec2
+    public class Vec2: Vector
     {
         public double x, y;
 
@@ -21,6 +21,12 @@
             this.y = _y;
         }
 
+        public Vec2(Vec2 p1, Vec2 p2)
+        {
+            this.x = p2.x - p1.x;
+            this.y= p2.y - p1.y;
+        }
+
         /// <summary>
         /// Returns the dot product of 2 vectors
         /// </summary>
@@ -37,10 +43,28 @@
             return Math.Acos(Vec2.DotProduct(a, b) / (a.Length() * b.Length()));
         }
 
+        public static double DistanceBetweenPoints(Vec2 pt1, Vec2 pt2)
+        {
+            Vec2 span = pt2 - pt1;
+            return span.Length();
+        }
+
+        public static Vec2 PointBetweenPoints(Vec2 pt1, Vec2 pt2, double distanceRatio = 0.5)
+        {
+            Vec2 span = pt2 - pt1;
+            return pt1 + distanceRatio * span;
+        }
+
+        public static bool VectorsIdentical(Vec2 v1, Vec2 v2)
+        {
+            return v1.x == v2.x && v1.y == v2.y;
+
+        }
+
         /// <summary>
         /// Returns the length of the vector
         /// </summary>
-        public double Length()
+        public override double Length()
         {
             return Math.Sqrt(this.x * this.x + this.y * this.y);
         }
@@ -48,7 +72,7 @@
         /// <summary>
         /// Returns the unit vector of the parent vector
         /// </summary>
-        public Vec2 Normalise()
+        public override Vec2 Normalise()
         {
             return this / Length();
         }
@@ -56,7 +80,7 @@
         /// <summary>
         /// Returns the inverse of the vector
         /// </summary>
-        public Vec2 Inv()
+        public override Vec2 Inv()
         {
             return new Vec2(-x, -y);
         }
@@ -64,7 +88,7 @@
         /// <summary>
         /// Returns a vector with elementwise absolute values of the parent vector
         /// </summary>
-        public Vec2 Abs()
+        public override Vec2 Abs()
         {
             Vec2 absV = new Vec2();
             absV.x = Math.Abs(x);
@@ -72,10 +96,23 @@
             return absV;
         }
 
+        public Vec2 RotateAroundPoint(Vec2 c, double angDeg)
+        {
+            double cosA = Math.Cos(Math.PI* angDeg/180);
+            double sinA = Math.Sin(Math.PI * angDeg / 180);
+
+            Vec2 pO = this - c;
+            Vec2 pNew = new Vec2();
+            pNew.x = pO.x*cosA - pO.y*sinA;
+            pNew.y = pO.x*sinA + pO.y*cosA;
+
+            return pNew+c;
+        }
+
         /// <summary>
         /// Returns the value of the smallest element of the vector
         /// </summary>
-        public double Min()
+        public override double Min()
         {
             return Math.Min(x, y);
         }
@@ -83,7 +120,7 @@
         /// <summary>
         /// Returns the value of the largest element of the vector
         /// </summary>
-        public double Max()
+        public override double Max()
         {
             return Math.Max(x, y);
         }
@@ -166,6 +203,11 @@
         /// Multiplies each element by the given value
         /// </summary>
         public static Vec2 operator *(Vec2 a, double d)
+        {
+            return new Vec2(a.x * d, a.y * d);
+        }
+
+        public static Vec2 operator *(double d, Vec2 a)
         {
             return new Vec2(a.x * d, a.y * d);
         }

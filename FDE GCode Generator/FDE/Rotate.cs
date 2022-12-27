@@ -20,13 +20,13 @@ namespace FDE
 
 
 
-        public Rotate(Field _field, Vec3 rotationCentre, Vec3 rotationVector, double angle)
+        public Rotate(Field _field, Vec3 rotationCentre, Vec3 rotationVector, double angleInDegrees)
         {
             //https://www.eng.uc.edu/~beaucag/Classes/Properties/OptionalProjects/CoordinateTransformationCode/Rotate%20about%20an%20arbitrary%20axis%20(3%20dimensions).html
             this.field = _field;
             this.c = rotationCentre;
             this.v = rotationVector;
-            this.ang = angle;
+            this.ang = Math.PI* angleInDegrees/180;
 
             t = new Mat4x4(new double[,] { { 1, 0, 0, -c.x }, { 0, 1, 0, -c.y }, { 0, 0, 1, -c.z }, { 0, 0, 0, 1 } });
             tInv = new Mat4x4(new double[,] { { 1, 0, 0, c.x }, { 0, 1, 0, c.y }, { 0, 0, 1, c.z }, { 0, 0, 0, 1 } });

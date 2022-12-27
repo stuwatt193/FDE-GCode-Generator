@@ -2,7 +2,7 @@
     ///<summary>
     ///A 3D vector for use in vector calculus
     ///</summary>
-{    public class Vec3
+{    public class Vec3: Vector
     {
         public double x, y, z;
 
@@ -36,6 +36,20 @@
             this.z = _z;
         }
 
+        public Vec3(Vec2 xy, double z)
+        {
+            this.x = xy.x;
+            this.y = xy.y;
+            this.z= z;
+        }
+
+        public Vec3(Vec3 p1, Vec3 p2)
+        {
+            this.x = p2.x - p1.x;
+            this.y = p2.y - p1.y;
+            this.z = p2.z - p1.z;
+        }
+
         /// <summary>
         /// Returns the dot product of 2 vectors
         /// </summary>
@@ -63,10 +77,42 @@
             return Math.Acos(Vec3.DotProduct(a, b) / (a.Length() * b.Length()));
         }
 
+        public static double DistanceBetweenPoints(Vec3 pt1, Vec3 pt2)
+        {
+            Vec3 span = pt2 - pt1;
+            return span.Length();
+        }
+
+        public static Vec3 PointBetweenPoints(Vec3 pt1, Vec3 pt2, double distanceRatio = 0.5)
+        {
+            Vec3 span = pt2 - pt1;
+            return pt1 + distanceRatio * span;
+        }
+
+        public Vec3 RotateAroundPointInZ(Vec3 c, double angDeg)
+        {
+            double cosA = Math.Cos(Math.PI * angDeg / 90);
+            double sinA = Math.Sin(Math.PI * angDeg / 90);
+
+            Vec3 pO = this - c;
+            Vec3 pNew = new Vec3();
+            pNew.x = pO.x * cosA - pO.y * sinA;
+            pNew.y = pO.x * sinA + pO.y * cosA;
+            pNew.z = this.z;
+
+            return pNew + c;
+        }
+
+        public static bool VectorsIdentical(Vec3 v1, Vec3 v2)
+        {
+            return v1.x == v2.x && v1.y == v2.y && v1.z == v2.z;
+
+        }
+
         /// <summary>
         /// Returns the length of the vector
         /// </summary>
-        public double Length()
+        public override double Length()
         {
             return Math.Sqrt(this.x * this.x + this.y * this.y + this.z * this.z);
         }
@@ -74,7 +120,7 @@
         /// <summary>
         /// Returns the unit vector of the parent vector
         /// </summary>
-        public Vec3 Normalise()
+        public override Vec3 Normalise()
         {
             return this / Length();
         }
@@ -82,7 +128,7 @@
         /// <summary>
         /// Returns the inverse of the vector
         /// </summary>
-        public Vec3 Inv()
+        public override Vec3 Inv()
         {
             return new Vec3(-x, -y, -z);
         }
@@ -90,7 +136,7 @@
         /// <summary>
         /// Returns a vector with elementwise absolute values of the parent vector
         /// </summary>
-        public Vec3 Abs()
+        public override Vec3 Abs()
         {
             Vec3 absV = new Vec3();
             absV.x = Math.Abs(x);
@@ -129,7 +175,7 @@
         /// <summary>
         /// Returns the value of the smallest element of the vector
         /// </summary>
-        public double Min()
+        public override double Min()
         {
             return Math.Min(x,Math.Min(y,z));
         }
@@ -137,7 +183,7 @@
         /// <summary>
         /// Returns the value of the largest element of the vector
         /// </summary>
-        public double Max()
+        public override double Max()
         {
             return Math.Max(x, Math.Max(y, z));
         }
@@ -253,6 +299,14 @@
         public static Vec3 operator *(double d, Vec3 a)
         {
             return new Vec3(a.x * d, a.y * d, a.z * d);
+        }
+
+        /// <summary>
+        /// Multiplies each element of vector a by the same element in vector b
+        /// </summary>
+        public static Vec3 operator *(Vec3 a, Vec3 b)
+        {
+            return new Vec3(a.x*b.x,a.y*b.y,a.z*b.z);
         }
 
         /// <summary>

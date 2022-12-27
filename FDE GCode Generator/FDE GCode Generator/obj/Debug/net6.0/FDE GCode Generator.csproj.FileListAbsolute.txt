@@ -16,3 +16,21 @@ F:\OneDrive\FDE\FDE GCode Generator\FDE GCode Generator\obj\Debug\net6.0\FDE GCo
 F:\OneDrive\FDE\FDE GCode Generator\FDE GCode Generator\bin\Debug\net6.0\FDE.dll
 F:\OneDrive\FDE\FDE GCode Generator\FDE GCode Generator\bin\Debug\net6.0\FDE.pdb
 F:\OneDrive\FDE\FDE GCode Generator\FDE GCode Generator\obj\Debug\net6.0\FDE GCode Generator.csproj.CopyComplete
+D:\FDE\FDE GCode Generator\FDE GCode Generator\bin\Debug\net6.0\FDE GCode Generator.exe
+D:\FDE\FDE GCode Generator\FDE GCode Generator\bin\Debug\net6.0\FDE GCode Generator.deps.json
+D:\FDE\FDE GCode Generator\FDE GCode Generator\bin\Debug\net6.0\FDE GCode Generator.runtimeconfig.json
+D:\FDE\FDE GCode Generator\FDE GCode Generator\bin\Debug\net6.0\FDE GCode Generator.dll
+D:\FDE\FDE GCode Generator\FDE GCode Generator\bin\Debug\net6.0\FDE GCode Generator.pdb
+D:\FDE\FDE GCode Generator\FDE GCode Generator\bin\Debug\net6.0\FDE.dll
+D:\FDE\FDE GCode Generator\FDE GCode Generator\bin\Debug\net6.0\FDE.pdb
+D:\FDE\FDE GCode Generator\FDE GCode Generator\obj\Debug\net6.0\FDE GCode Generator.csproj.AssemblyReference.cache
+D:\FDE\FDE GCode Generator\FDE GCode Generator\obj\Debug\net6.0\FDE GCode Generator.GeneratedMSBuildEditorConfig.editorconfig
+D:\FDE\FDE GCode Generator\FDE GCode Generator\obj\Debug\net6.0\FDE GCode Generator.AssemblyInfoInputs.cache
+D:\FDE\FDE GCode Generator\FDE GCode Generator\obj\Debug\net6.0\FDE GCode Generator.AssemblyInfo.cs
+D:\FDE\FDE GCode Generator\FDE GCode Generator\obj\Debug\net6.0\FDE GCode Generator.csproj.CoreCompileInputs.cache
+D:\FDE\FDE GCode Generator\FDE GCode Generator\obj\Debug\net6.0\FDE GCode Generator.csproj.CopyComplete
+D:\FDE\FDE GCode Generator\FDE GCode Generator\obj\Debug\net6.0\FDE GCode Generator.dll
+D:\FDE\FDE GCode Generator\FDE GCode Generator\obj\Debug\net6.0\ref\FDE GCode Generator.dll
+D:\FDE\FDE GCode Generator\FDE GCode Generator\obj\Debug\net6.0\FDE GCode Generator.pdb
+D:\FDE\FDE GCode Generator\FDE GCode Generator\obj\Debug\net6.0\FDE GCode Generator.genruntimeconfig.cache
+D:\FDE\FDE GCode Generator\FDE GCode Generator\obj\Debug\net6.0\refint\FDE GCode Generator.dll

@@ -30,7 +30,7 @@
             for (int i = 0; i < sdfList.Count; i++)
             {
                 Field sdf = sdfList[i];
-                dist = Math.Min(sdf.Value(pos), dist);
+                dist = Math.Max(sdf.Value(pos), dist);
             }
             return dist;
         }
